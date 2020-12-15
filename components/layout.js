@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Header from './header.js';
 
 export const siteTitle = 'gpjobs.ca - Job Openings in Grande Prairie, Alberta';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <div className="min-h-screen px-4 flex flex-col bg-gray-50">
       <div className="container mx-auto max-w-5xl min-h-screen flex flex-col">
