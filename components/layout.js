@@ -1,56 +1,22 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Header from './header.js';
 
-export const siteTitle = 'gpjobs.ca';
+export const siteTitle = 'gpjobs.ca - Job Openings in Grande Prairie, Alberta';
 
 export default function Layout({ children, home }) {
   return (
     <div className="min-h-screen px-4 flex flex-col bg-gray-50">
       <div className="container mx-auto max-w-5xl min-h-screen flex flex-col">
         <Head>
-          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+          <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
           <meta
             name="description"
             content="Job Openings in Grande Prairie, Alberta"
           />
         </Head>
 
-        <header>
-          <nav>
-            <div>
-              <div className="flex items-center justify-between h-24 md:h-16">
-                <div className="flex items-start flex-col md:flex-row md:items-center">
-                  <div className="flex-shrink-0">
-                    <a href="/">
-                      <img
-                        src="/img/gpjobsca_logo.png"
-                        alt="gpjobs.ca Logo"
-                        className="w-32"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-xs md:text-base font-medium text-gray-400 md:ml-4">
-                    Job Openings in Grande Prairie, Alberta
-                  </div>
-                </div>
-                <div className="flex items-center ml-4 space-x-4">
-                  <a
-                    href="/manage/login"
-                    className="font-bold text-gray-600 hover:text-gray-900"
-                  >
-                    Login
-                  </a>
-                  <a
-                    href="/manage/jobs/new"
-                    className="bg-blue-500 hover:bg-blue-700 px-4 py-2 font-bold rounded-full text-white transition-colors transition-75"
-                  >
-                    Post Job
-                  </a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </header>
+        <Header />
 
         <main className="flex-grow py-8 lg:py-16">{children}</main>
 
