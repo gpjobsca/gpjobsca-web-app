@@ -23,7 +23,7 @@ export default function signIn() {
               type="email"
               name="email"
               autoComplete="email"
-              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white focus:ring-indigo-500 focus:border-indigo-500 shadow-sm rounded-md"
+              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white focus:ring-indigo-500 focus:border-indigo-500 shadow-sm rounded-md text-sm"
             />
             <p className="my-2 text-red-500 bold text-sm">
               Email Address is Required
@@ -38,7 +38,7 @@ export default function signIn() {
               id="password"
               type="password"
               name="password"
-              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white focus:ring-indigo-500 focus:border-indigo-500 shadow-sm rounded-md"
+              className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white focus:ring-indigo-500 focus:border-indigo-500 shadow-sm rounded-md text-sm"
             />
             <p className="my-2 text-red-500 bold text-sm">
               Password is required
