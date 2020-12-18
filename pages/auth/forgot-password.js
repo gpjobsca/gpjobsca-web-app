@@ -5,7 +5,7 @@ export default function signIn() {
   return (
     <Layout>
       <Head>
-        <title>Sign In - gpjobs.ca</title>
+        <title>Forgot Password - gpjobs.ca</title>
       </Head>
       <div>
         <div className="p-6 bg-white max-w-xl mx-auto rounded shadow border">
