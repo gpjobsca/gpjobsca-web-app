@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import styles from '../styles/job.module.css';
 
 export default function Job() {
   return (
@@ -47,7 +46,7 @@ export default function Job() {
             </div>
           </header>
 
-          <div className={styles.jobText}>
+          <div className="prose lg:prose-lg">
             <p>
               Sinopec Canada is a wholly-owned subsidiary of a major
               International upstream oil and gas company, Sinopec International

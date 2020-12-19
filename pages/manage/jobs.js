@@ -1,12 +1,16 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../../components/layout';
+import PageHeading from '../../components/page-heading';
 
-export default function Home() {
+export default function MyJobs() {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>My Jobs - gpjobs.ca</title>
       </Head>
+
+      <PageHeading text="My Jobs" />
+
       <div className="bg-white shadow-sm mx-auto rounded border border-gray-300">
         <a
           href="/"
@@ -19,27 +23,60 @@ export default function Home() {
             </div>
             <div className="flex-shrink-0">
               <div className="flex items-center">
+                <span className="px-3 py-1 bg-green-400 rounded-full text-sm text-white uppercase font-bold">
+                  Active
+                </span>
                 <span className="mx-4 text-gray-500">7d</span>
-                <a
-                  href="/"
-                  className="hover:flex hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75"
-                >
+                <div className="hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:flex hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="inline-block w-4"
+                  >
+                    <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
+                    <path
+                      fillRule="evenodd"
+                      d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="inline-block ml-2">Edit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="/"
+          className="group block p-8 border-b border-gray-300 border-solid last:border-b-0 rounded-sm hover:bg-gray-50"
+        >
+          <div className="flex justify-between items-center">
+            <div className="mr-8">
+              <h2 className="text-2xl text-gray-700">Field Administrator</h2>
+              <h3 className="text-gray-400">Sinopec Canada</h3>
+            </div>
+            <div className="flex-shrink-0">
+              <div className="flex items-center">
+                <span className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-500 uppercase font-bold">
+                  Expired
+                </span>
+                <span className="mx-4 text-gray-500">15d</span>
+                <div className="hover:flex hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
                     className="inline-block w-4"
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                      fillRule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clipRule="evenodd"
                     />
                   </svg>
-                  <span className="inline-block ml-2">Apply Now</span>
-                </a>
+                  <span className="inline-block ml-2">Review</span>
+                </div>
               </div>
             </div>
           </div>
@@ -55,35 +92,25 @@ export default function Home() {
             </div>
             <div className="flex-shrink-0">
               <div className="flex items-center">
-                <span className="mx-4 text-gray-500">7d</span>
-                <a
-                  href="/"
-                  className="hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75"
-                >
-                  Apply Now
-                </a>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="/"
-          className="group block p-8 border-b border-gray-300 border-solid last:border-b-0 rounded-sm hover:bg-gray-50"
-        >
-          <div className="flex justify-between items-center">
-            <div className="mr-8">
-              <h2 className="text-2xl text-gray-700">Field Administrator</h2>
-              <h3 className="text-gray-400">Sinopec Canada</h3>
-            </div>
-            <div className="flex-shrink-0">
-              <div className="flex items-center">
-                <span className="mx-4 text-gray-500">7d</span>
-                <a
-                  href="/"
-                  className="hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75"
-                >
-                  Apply Now
-                </a>
+                <span className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-500 uppercase font-bold">
+                  Expired
+                </span>
+                <span className="mx-4 text-gray-500">53d</span>
+                <div className="hover:flex hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="inline-block w-4"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="inline-block ml-2">Review</span>
+                </div>
               </div>
             </div>
           </div>

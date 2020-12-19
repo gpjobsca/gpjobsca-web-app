@@ -1,3 +1,5 @@
+const typography = require('@tailwindcss/typography');
+
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js'],
   darkMode: false, // or 'media' or 'class'
@@ -10,5 +12,5 @@ module.exports = {
       display: ['hover', 'group-hover'],
     },
   },
-  plugins: [],
+  plugins: [typography],
 };
