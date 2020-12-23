@@ -20,10 +20,7 @@ export default function Home() {
             <div className="flex-shrink-0">
               <div className="flex items-center">
                 <span className="mx-4 text-gray-500">7d</span>
-                <a
-                  href="/"
-                  className="hover:flex hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75"
-                >
+                <div className="hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:flex hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -39,7 +36,7 @@ export default function Home() {
                     />
                   </svg>
                   <span className="inline-block ml-2">Apply Now</span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -56,12 +53,9 @@ export default function Home() {
             <div className="flex-shrink-0">
               <div className="flex items-center">
                 <span className="mx-4 text-gray-500">7d</span>
-                <a
-                  href="/"
-                  className="hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75"
-                >
+                <div className="hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:flex hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75">
                   Apply Now
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -78,12 +72,9 @@ export default function Home() {
             <div className="flex-shrink-0">
               <div className="flex items-center">
                 <span className="mx-4 text-gray-500">7d</span>
-                <a
-                  href="/"
-                  className="hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75"
-                >
+                <div className="hidden group-hover:block border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:flex hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-colors transition-75">
                   Apply Now
-                </a>
+                </div>
               </div>
             </div>
           </div>
