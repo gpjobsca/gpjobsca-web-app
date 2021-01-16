@@ -56,7 +56,9 @@ export default function Home({ jobs }) {
 
 export async function getServerSideProps() {
   const res = await api().get('/jobs');
-  const jobs = res.data;
+  const {
+    data: { data: jobs },
+  } = res;
 
   return {
     props: { jobs },

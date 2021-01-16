@@ -10,7 +10,9 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.0.4",
+    "axios": "^0.21.1",
     "date-fns": "^2.16.1",
+    "js-cookie": "^2.2.1",
     "next": "10.0.3",
     "postcss": "^8.1.13",
     "react": "17.0.1",

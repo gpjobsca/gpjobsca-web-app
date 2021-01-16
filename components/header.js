@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useAuth } from '../lib/auth.js';
 
 export default function Header() {
-  const auth = useAuth();
+  const { auth } = useAuth();
+  const router = useRouter();
 
   return (
     <>
@@ -30,7 +32,10 @@ export default function Header() {
               {auth.user ? (
                 <>
                   <a
-                    onClick={() => auth.signout()}
+                    onClick={async () => {
+                      await auth.signout();
+                      router.push('/');
+                    }}
                     className="font-bold text-gray-600 hover:text-gray-900"
                   >
                     Sign Out
